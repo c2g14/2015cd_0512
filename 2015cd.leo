@@ -1776,7 +1776,7 @@ def index(self, N=20 ,N1=20 , M=4, P=20,midx=400):
 &lt;body onload="brython()"&gt;
     
 &lt;h1&gt;cda_g2 課程練習&lt;/h1&gt;
-&lt;h2&gt;組員名單&lt;/h2&gt;
+
 
 
 

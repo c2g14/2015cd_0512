@@ -113,7 +113,7 @@ class Midterm(object):
     <body onload="brython()">
         
     <h1>cda_g2 課程練習</h1>
-    <h2>組員名單</h2>
+
 
 
 
