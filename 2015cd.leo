@@ -1782,8 +1782,8 @@ def index(self, N=20 ,N1=20 , M=4, P=20,midx=400):
 
 &lt;h1&gt;cda_g2_w11 練習&lt;/h1&gt;
 &lt;form method=POST action=index&gt;
-&lt;a href="spur"&gt;spur&lt;/a&gt;&lt;br /&gt;
-&lt;a href="drawspur"&gt;drawspur&lt;/a&gt;&lt;br /&gt;
+&lt;a href="spur"&gt;gear&lt;/a&gt;&lt;br /&gt;
+&lt;a href="drawspur"&gt;gear7&lt;/a&gt;&lt;br /&gt;
 &lt;a href="fileuploadform"&gt;上傳檔案&lt;/a&gt;&lt;br /&gt;
 &lt;a href="download_list"&gt;列出上傳檔案&lt;/a&gt;&lt;br /&gt;
 
@@ -1846,22 +1846,22 @@ def spur(self, N=20 , M=5, P=15):
 
 &lt;h1&gt;cda_g2_w11 練習&lt;/h1&gt;
 &lt;form method=POST action=spuraction&gt;
-齒數:&lt;select name"select_one&gt;
-&lt;option value="1"&gt;20&lt;/option&gt;
-&lt;option value="2"&gt;25&lt;/option&gt;
-&lt;option value="3"&gt;30&lt;/option&gt;
-&lt;option value="4"&gt;35&lt;/option&gt;
-&lt;option value="5"&gt;40&lt;/option&gt;
-&lt;option value="6"&gt;35&lt;/option&gt;
+齒數:&lt;select name="N"&gt;
+&lt;option value="22"&gt;22&lt;/option&gt;
+&lt;option value="32"&gt;32&lt;/option&gt;
+&lt;option value="35"&gt;35&lt;/option&gt;
+&lt;option value="38"&gt;38&lt;/option&gt;
+&lt;option value="45"&gt;45&lt;/option&gt;
+&lt;option value="47"&gt;47&lt;/option&gt;
 &lt;/select&gt;&lt;br /&gt;
-模數:&lt;select name"select_two&gt;
-&lt;option value="1"&gt;5&lt;/option&gt;
-&lt;option value="2"&gt;10&lt;/option&gt;
-&lt;option value="3"&gt;15&lt;/option&gt;
+模數:&lt;select name="M"&gt;
+&lt;option value="15"&gt;15&lt;/option&gt;
+&lt;option value="10"&gt;10&lt;/option&gt;
+&lt;option value="20"&gt;20&lt;/option&gt;
 &lt;/select&gt;&lt;br /&gt;
-壓力角:&lt;select name"select_three&gt;
-&lt;option value="1"&gt;15&lt;/option&gt;
-&lt;option value="2"&gt;20&lt;/option&gt;
+壓力角:&lt;select name="P"&gt;
+&lt;option value="15"&gt;15&lt;/option&gt;
+&lt;option value="20"&gt;20&lt;/option&gt;
 &lt;/select&gt;&lt;br /&gt;
 &lt;input type=submit value=send&gt;
 
@@ -1888,9 +1888,9 @@ def spuraction(self, N=20 , M=5, P=15):
 &lt;!-- 啟動 brython() --&gt;
 &lt;body onload="brython()"&gt;
 
-齒數:'''+str(N)+'''&lt;output name=N for=str(N)&gt;&lt;br /&gt;
-模數:'''+str(M)+'''&lt;output name=M for=str(M)&gt;&lt;br /&gt;
-壓力角:'''+str(P)+'''&lt;output name=P for=str(P)&gt;&lt;br /&gt;
+齒數:'''+str(N)+'''&lt;output name =N for =str(N)&gt;&lt;br /&gt;
+模數:'''+str(M)+'''&lt;output name =M for =str(M)&gt;&lt;br /&gt;
+壓力角:'''+str(P)+'''&lt;output name =P for =str(P)&gt;&lt;br /&gt;
 '''
 
     return outstring

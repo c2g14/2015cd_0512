@@ -119,8 +119,8 @@ class Midterm(object):
 
     <h1>cda_g2_w11 練習</h1>
     <form method=POST action=index>
-    <a href="spur">spur</a><br />
-    <a href="drawspur">drawspur</a><br />
+    <a href="spur">gear</a><br />
+    <a href="drawspur">gear7</a><br />
     <a href="fileuploadform">上傳檔案</a><br />
     <a href="download_list">列出上傳檔案</a><br />
 
@@ -144,22 +144,22 @@ class Midterm(object):
 
     <h1>cda_g2_w11 練習</h1>
     <form method=POST action=spuraction>
-    齒數:<select name"select_one>
-    <option value="1">20</option>
-    <option value="2">25</option>
-    <option value="3">30</option>
-    <option value="4">35</option>
-    <option value="5">40</option>
-    <option value="6">35</option>
+    齒數:<select name="N">
+    <option value="22">22</option>
+    <option value="32">32</option>
+    <option value="35">35</option>
+    <option value="38">38</option>
+    <option value="45">45</option>
+    <option value="47">47</option>
     </select><br />
-    模數:<select name"select_two>
-    <option value="1">5</option>
-    <option value="2">10</option>
-    <option value="3">15</option>
+    模數:<select name="M">
+    <option value="15">15</option>
+    <option value="10">10</option>
+    <option value="20">20</option>
     </select><br />
-    壓力角:<select name"select_three>
-    <option value="1">15</option>
-    <option value="2">20</option>
+    壓力角:<select name="P">
+    <option value="15">15</option>
+    <option value="20">20</option>
     </select><br />
     <input type=submit value=send>
 
@@ -185,9 +185,9 @@ class Midterm(object):
     <!-- 啟動 brython() -->
     <body onload="brython()">
 
-    齒數:'''+str(N)+'''<output name=N for=str(N)><br />
-    模數:'''+str(M)+'''<output name=M for=str(M)><br />
-    壓力角:'''+str(P)+'''<output name=P for=str(P)><br />
+    齒數:'''+str(N)+'''<output name =N for =str(N)><br />
+    模數:'''+str(M)+'''<output name =M for =str(M)><br />
+    壓力角:'''+str(P)+'''<output name =P for =str(P)><br />
     '''
 
         return outstring
